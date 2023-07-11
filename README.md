@@ -12,10 +12,6 @@ Expense-Managing-Webapp
 
 **DataBase** `MongoDB`
 
-## Images of Web application
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 ## Features and Optimizations
 
 For proper security and authantication of users the login and signin system is integrated with Sign-Up and LogIn system.
