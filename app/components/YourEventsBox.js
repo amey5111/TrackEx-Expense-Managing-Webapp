@@ -22,14 +22,13 @@ export default function YourEventsBox() {
                 </div>
                 <div className="flex-grow pl-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">
-                    CATEGORY
+                    CATEGORY : FAMILY AND FRIENDS
                   </h2>
                   <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
-                    The 400 Blows
+                    5th Anniversary
                   </h1>
                   <p className="leading-relaxed mb-5">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
+                    Event Discription will be Here
                   </p>
                   <Link
                     href="/"
@@ -83,7 +82,7 @@ export default function YourEventsBox() {
                 </div>
                 <div className="flex-grow pl-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">
-                    CATEGORY
+                    CATEGORY : FAMILY AND FRIENDS
                   </h2>
                   <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
                     Shooting Stars
@@ -144,10 +143,10 @@ export default function YourEventsBox() {
                 </div>
                 <div className="flex-grow pl-6">
                   <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">
-                    CATEGORY
+                    CATEGORY : COMPANY OR BUSINESS
                   </h2>
                   <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
-                    Neptune
+                    Neptune Fest
                   </h1>
                   <p className="leading-relaxed mb-5">
                     Photo booth fam kinfolk cold-pressed sriracha leggings

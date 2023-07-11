@@ -143,9 +143,6 @@ export const PesonalExpenseForm = () => {
                         Date
                       </th>
                       <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                        Catagory
-                      </th>
-                      <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                         Ammount
                       </th>
                       <th className="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br">
@@ -155,60 +152,22 @@ export const PesonalExpenseForm = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="px-4 py-3">Start</td>
-                      <td className="px-4 py-3">5 Mb/s</td>
-                      <td className="px-4 py-3">15 GB</td>
-                      <td className="px-4 py-3 text-lg text-gray-900">Free</td>
+                      <td className="px-4 py-3">Grocery Shop</td>
+                      <td className="px-4 py-3">11-07-2023</td>
+                      <td className="px-4 py-3 text-lg text-gray-900">1000</td>
                       <td class="w-10 text-center">
                         <input name="select" type="checkbox" />
                       </td>
                     </tr>
                     <tr>
                       <td className="border-t-2 border-gray-200 px-4 py-3">
-                        Pro
+                        Project Element Shop
                       </td>
                       <td className="border-t-2 border-gray-200 px-4 py-3">
-                        25 Mb/s
-                      </td>
-                      <td className="border-t-2 border-gray-200 px-4 py-3">
-                        25 GB
+                        09/05/2023
                       </td>
                       <td className="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                        $24
-                      </td>
-                      <td class="w-10 text-center">
-                        <input name="select" type="checkbox" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-t-2 border-gray-200 px-4 py-3">
-                        Business
-                      </td>
-                      <td className="border-t-2 border-gray-200 px-4 py-3">
-                        36 Mb/s
-                      </td>
-                      <td className="border-t-2 border-gray-200 px-4 py-3">
-                        40 GB
-                      </td>
-                      <td className="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                        $50
-                      </td>
-                      <td class="w-10 text-center">
-                        <input name="select" type="checkbox" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                        Exclusive
-                      </td>
-                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                        48 Mb/s
-                      </td>
-                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                        120 GB
-                      </td>
-                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                        $72
+                        24
                       </td>
                       <td class="w-10 text-center">
                         <input name="select" type="checkbox" />
