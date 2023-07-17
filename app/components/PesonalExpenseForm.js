@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-
+import axios from "axios";
 export const PesonalExpenseForm = () => {
-  const [DateInput, setDateInput] = useState("");
-  const [NameInput, setNameInput] = useState("");
-  const [AmmountInput, setAmmountInput] = useState(0);
-  const [NoteInut, setNoteInput] = useState("");
+  const [date, setDateInput] = useState("");
+  const [givento, setNameInput] = useState("");
+  const [Ammount, setAmmountInput] = useState(0);
+  const [ExpenseNote, setNoteInput] = useState("");
 
   const handleDateInput = (event) => {
     setDateInput(event.target.value);
@@ -28,10 +28,27 @@ export const PesonalExpenseForm = () => {
   };
 
   const isClearDisabled =
-    DateInput !== "" || NameInput !== "" || AmmountInput !== 0;
+    date !== "" || givento !== "" || Ammount !== 0;
   const isAddExpenseDisables =
-    DateInput !== "" && NameInput !== "" && AmmountInput > 0;
-
+    date !== "" && givento !== "" && Ammount > 0;
+  const ExpensesubmitHandler = async (e) => {
+    e.preventDefault();
+    try {
+      const { data } = await axios.post("/api/expenseui", {
+        date,
+        givento,
+        Ammount,
+        ExpenseNote,
+      });
+      console.log(data);
+      // let r = prompt();
+      // document.getElementById(
+      //   "Register User"
+      // ).innerHTML = `<p> Signed In Successfully just <a href="/login">Login</a> here</p>`;
+    } catch (error) {
+      console.log(error.response.data);
+    }
+  };
   return (
     <section className="text-gray-600 body-font">
       <div className="container flex md:flex-row flex-col items-center">
@@ -46,7 +63,7 @@ export const PesonalExpenseForm = () => {
           <div className=" flex w-full md:justify-start justify-center items-end">
             <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
               <label
-                for="hero-field"
+                htmlFor="hero-field"
                 className="leading-7 text-sm text-gray-600"
               >
                 Date
@@ -57,11 +74,11 @@ export const PesonalExpenseForm = () => {
                 id="hero-field"
                 name="hero-field"
                 className="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                value={DateInput}
+                value={date}
                 onChange={handleDateInput}
               />
               <label
-                for="hero-field"
+                htmlFor="hero-field"
                 className="leading-7 text-sm text-gray-600"
               >
                 Name
@@ -72,11 +89,11 @@ export const PesonalExpenseForm = () => {
                 id="hero-field"
                 name="hero-field"
                 className="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                value={NameInput}
+                value={givento}
                 onChange={handleNameInput}
               />
               <label
-                for="hero-field"
+                htmlFor="hero-field"
                 className="leading-7 text-sm text-gray-600"
               >
                 Ammount in Rs
@@ -87,11 +104,11 @@ export const PesonalExpenseForm = () => {
                 id="hero-field"
                 name="hero-field"
                 className="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                value={AmmountInput}
+                value={Ammount}
                 onChange={handleAmmountInput}
               />
               <label
-                for="hero-field"
+                htmlFor="hero-field"
                 className="leading-7 text-sm text-gray-600"
               >
                 Note (optional)
@@ -102,7 +119,7 @@ export const PesonalExpenseForm = () => {
                 id="hero-field"
                 name="hero-field"
                 className="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                value={NoteInut}
+                value={ExpenseNote}
                 onChange={handleNoteInput}
               />
             </div>
@@ -116,6 +133,7 @@ export const PesonalExpenseForm = () => {
           </div>
           <button
             className=" mt-5 inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-md disabled:bg-purple-300"
+            onClick={ExpensesubmitHandler}
             disabled={!isAddExpenseDisables}
           >
             Add Expense
@@ -155,7 +173,7 @@ export const PesonalExpenseForm = () => {
                       <td className="px-4 py-3">Grocery Shop</td>
                       <td className="px-4 py-3">11-07-2023</td>
                       <td className="px-4 py-3 text-lg text-gray-900">1000</td>
-                      <td class="w-10 text-center">
+                      <td className="w-10 text-center">
                         <input name="select" type="checkbox" />
                       </td>
                     </tr>
@@ -169,7 +187,7 @@ export const PesonalExpenseForm = () => {
                       <td className="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
                         24
                       </td>
-                      <td class="w-10 text-center">
+                      <td className="w-10 text-center">
                         <input name="select" type="checkbox" />
                       </td>
                     </tr>
@@ -182,9 +200,9 @@ export const PesonalExpenseForm = () => {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
                   >

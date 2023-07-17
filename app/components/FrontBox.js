@@ -19,66 +19,65 @@ export default function FrontBox() {
               <b className="text-yellow-500 mr-1 text-2xl">
                 To Keep An Eye On Monthly Expenses
               </b>
-              Which Will Surely:
             </p>
             <p className=" font-semibold text-xl leading-relaxed">
               Which Will Surely:
             </p>
-            <div class="container w-full mb-8">
-              <div class="flex flex-wrap lg:w-full sm:mx-auto sm:mb-2 ">
-                <div class="p-2 w-full">
-                  <div class="bg-purple-200 rounded-xl flex p-4 h-full items-center border border-yellow-400">
+            <div className="container w-full mb-8">
+              <div className="flex flex-wrap lg:w-full sm:mx-auto sm:mb-2 ">
+                <div className="p-2 w-full">
+                  <div className="bg-purple-200 rounded-xl flex p-4 h-full items-center border border-yellow-400">
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="3"
-                      class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="text-purple-500 w-6 h-6 flex-shrink-0 mr-4"
                       viewBox="0 0 24 24"
                     >
                       <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                       <path d="M22 4L12 14.01l-3-3"></path>
                     </svg>
-                    <span class="title-font font-medium">
+                    <span className="title-font font-medium">
                       Protect one from Over-Spending
                     </span>
                   </div>
                 </div>
-                <div class="p-2 w-full">
-                  <div class="bg-purple-200 rounded-xl flex p-4 h-full items-center border border-yellow-400">
+                <div className="p-2 w-full">
+                  <div className="bg-purple-200 rounded-xl flex p-4 h-full items-center border border-yellow-400">
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="3"
-                      class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="text-purple-500 w-6 h-6 flex-shrink-0 mr-4"
                       viewBox="0 0 24 24"
                     >
                       <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                       <path d="M22 4L12 14.01l-3-3"></path>
                     </svg>
-                    <span class="title-font font-medium">
+                    <span className="title-font font-medium">
                       Helps in Maintaining Monthly Budget
                     </span>
                   </div>
                 </div>
-                <div class="p-2 w-full">
-                  <div class="bg-purple-200 rounded-xl flex p-4 h-full items-center border border-yellow-400">
+                <div className="p-2 w-full">
+                  <div className="bg-purple-200 rounded-xl flex p-4 h-full items-center border border-yellow-400">
                     <svg
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="3"
-                      class="text-purple-500 w-6 h-6 flex-shrink-0 mr-4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="text-purple-500 w-6 h-6 flex-shrink-0 mr-4"
                       viewBox="0 0 24 24"
                     >
                       <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                       <path d="M22 4L12 14.01l-3-3"></path>
                     </svg>
-                    <span class="title-font font-medium">
+                    <span className="title-font font-medium">
                       Most Importantly Increase Savings at the End of the Month
                     </span>
                   </div>
@@ -110,42 +109,32 @@ export default function FrontBox() {
           </div>
         </div>
       </section>
-      <section class="text-gray-600 body-font bg-purple-100">
-        <div className=" title-font sm:text-3xl text-2xl mb-4 font-semibold border-b text-yellow-300 border-b-yellow-300 pl-5">
-          Features
+      <section className="text-gray-600 body-font bg-purple-100">
+        <div className=" title-font sm:text-3xl text-2xl mb-4 font-semibold border-b text-purple-500 border-b-yellow-300  rounded-3xl bg-yellow-100 px-5 py-3 ml-auto text-center lg:w-3/5 w-full">
+          Some Exciting Features
         </div>
-        <div class="container px-5 py-4 mx-auto">
-          <div class="flex items-center lg: w-11/12 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-purple-200 text-purple-500 flex-shrink-0">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="sm:w-16 sm:h-16 w-10 h-10"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
+        <div className="container px-5 py-4 mx-auto">
+          <div className="flex items-center lg: w-11/12 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-purple-200 text-purple-500 flex-shrink-0">
+              <img src="/EVcircular.png" alt="Expense Visuallizer"/>
             </div>
-            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
-                Shooting Stars
+            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 className="text-purple-600 text-xl title-font px-5 border lg:w-fit bg-yellow-100 border-yellow-500 rounded-xl font-semibold mb-2">
+                Expenses Visuallizer
               </h2>
-              <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine.
+              <p className="leading-relaxed text-base">
+                With tracking expenses by just adding them in table you can also
+                visuallize them Graphycally to do accurate analysis on them.
               </p>
-              <a class="mt-3 text-purple-500 inline-flex items-center">
+              <a className="mt-3 text-purple-500 inline-flex items-center">
                 Learn More
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -153,78 +142,56 @@ export default function FrontBox() {
               </a>
             </div>
           </div>
-          <div class="flex items-center lg:w-11/12 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
-                The Catalyzer
+          <div className="flex items-center lg:w-11/12 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 className="text-purple-600 text-xl title-font px-5 border lg:w-fit bg-yellow-100 border-yellow-500 rounded-xl font-semibold mb-2">
+                Eventwise Expense Organizer
               </h2>
-              <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine.
+              <p className="leading-relaxed text-base">
+                To Manage and Track all your expenses in particular event
+                seamlessly with the provision of adding Receipt or Bill of
+                expenses No worries of loosing the important bills.
               </p>
-              <a class="mt-3 text-purple-500 inline-flex items-center">
+              <a className="mt-3 text-purple-500 inline-flex items-center">
                 Learn More
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </a>
             </div>
-            <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-purple-200 text-purple-500 flex-shrink-0">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="sm:w-16 sm:h-16 w-10 h-10"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-              </svg>
+            <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-purple-200 text-purple-500 flex-shrink-0">
+            <img src="/EEO_circular.png" alt="Eventwise Expense Organizer"/>
             </div>
           </div>
-          <div class="flex items-center lg:w-11/12 mx-auto sm:flex-row flex-col">
-            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-purple-200 text-purple-500 flex-shrink-0">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="sm:w-16 sm:h-16 w-10 h-10"
-                viewBox="0 0 24 24"
-              >
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
-                The 400 Blows
+          <div className="flex items-center lg:w-11/12 mx-auto sm:flex-row flex-col">
+            <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-purple-200 text-purple-500 flex-shrink-0">
+              <img src="/ES_circular.png" alt="Expense Splitter"/>
+                          </div>
+            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+              <h2 className="text-purple-600 text-xl title-font px-5 border lg:w-fit bg-yellow-100 border-yellow-500 rounded-xl font-semibold mb-2">
+                Expense Splitter
               </h2>
-              <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine.
+              <p className="leading-relaxed text-base">
+                Once you organize your expenses in events Further you can split
+                that expenses with friends also.
               </p>
-              <a class="mt-3 text-purple-500 inline-flex items-center">
+              <a className="mt-3 text-purple-500 inline-flex items-center">
                 Learn More
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWwidth="2"
+                  className="w-4 h-4 ml-2"
                   viewBox="0 0 24 24"
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -232,7 +199,7 @@ export default function FrontBox() {
               </a>
             </div>
           </div>
-          <button class="flex mx-auto mt-20 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">
+          <button className="flex mx-auto mt-20 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">
             Button
           </button>
         </div>
