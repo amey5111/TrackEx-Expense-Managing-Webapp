@@ -57,14 +57,14 @@ export const Navbar = () => {
                 <div className="relative inline-block">
                   <button
                     onMouseDown={handleToggle}
-                    className="flex items-center justify-center focus:outline-none"
+                    className=" flex items-center justify-center focus:outline-none"
                   >
                     <img
                       src="/Profile logo design circular.png"
                       alt="User Avatar"
-                      className="w-8 h-8 rounded-full mr-1"
+                      className="w-8 h-8 rounded-full lg:ml-3 ml-auto mr-1"
                     />
-                    <div className=" border-b-2 border-b-yellow-300 p-1 text-white mr-3 lg:mr-6 hover:text-yellow-300 cursor-pointer">
+                    <div className=" hidden lg:block bg-yellow-100 font-semibold text-purple-600 mr-3 border rounded-xl py-1 px-5 lg:mr-6 hover:text-gray-800 cursor-pointer">
                       {data?.user?.name}
                     </div>
                   </button>
@@ -82,13 +82,13 @@ export const Navbar = () => {
                       <div className="px-4 py-2">
                         <a
                           href="#"
-                          className="block text-black text-base my-3 rounded-md hover:bg-purple-100 text-center hover:text-purple-600"
+                          className="block text-black text-base my-3 rounded-md hover:bg-purple-700 hover:text-yellow-300 text-center"
                         >
                           Your Expenses
                         </a>
                         <a
                           href="#"
-                          className="block text-black text-base my-3 rounded-md hover:bg-purple-100 text-center hover:text-purple-600"
+                          className="block text-black text-base my-3 rounded-md hover:bg-purple-700 hover:text-yellow-300 text-center"
                         >
                           Your Events
                         </a>

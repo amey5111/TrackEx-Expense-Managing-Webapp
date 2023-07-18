@@ -53,8 +53,8 @@ export const PesonalExpenseForm = () => {
     <section className="text-gray-600 body-font">
       <div className="container flex md:flex-row flex-col items-center">
         <div className=" ml-3 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            Personal Expnse Tracker for Individuals
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium w-fit mx-auto text-center text-gray-900 border-b-2 border-b-yellow-300 pb-1">
+            Personal Expnse Tracker
           </h1>
           <p className="mb-8 leading-relaxed">
             To add new expense you can simply fill following fields and press
@@ -143,11 +143,11 @@ export const PesonalExpenseForm = () => {
           <section className="text-gray-600 body-font">
             <div className="container mt-3">
               <div className=" mx-auto flex flex-col text-center w-full mb-5">
-                <h1 className="sm:text-4xl text-3xl mx-auto font-medium title-font mb-2 text-gray-900">
+                <h1 className="sm:text-4xl text-3xl mx-auto font-medium title-font mb-5 border-b-2 border-b-yellow-300 pb-1 text-gray-900">
                   Expenses Table
                 </h1>
-                <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                  Here you can see all your expenses
+                <p className="lg:w-full mx-auto leading-relaxed text-base">
+                  Here you can see your  recent expenses. To See and Analyze your all Expenses click on Analyze all expenses link bellow the table.
                 </p>
               </div>
               <div className="lg:w-5/6 w-full mx-auto overflow-auto">
@@ -155,7 +155,7 @@ export const PesonalExpenseForm = () => {
                   <thead>
                     <tr>
                       <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
-                        Name
+                        Given To
                       </th>
                       <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                         Date
