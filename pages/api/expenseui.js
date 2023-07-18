@@ -5,15 +5,24 @@ export default async function Expensehandler(req, res) {
   if (req.method === "POST") {
     dbConnect();
 
-    const { date, givento, Ammount, ExpenseNote } = req.body;
+    const {
+      User_Email,
+      Expenses: [{ date, givento, Ammount, ExpenseNote }],
+    } = req.body;
+    const object = { date, givento, Ammount, ExpenseNote }
+    const User_Emailexists = await Expense.findOne({ User_Email });
+    if (User_Emailexists) {
+      const expense = await Expense.updateOne({User_Email : User_Email },
+        { $push: {Expenses: object }}
+        );
+        res.status(201).json({ expense });
+    } else {
+      const expense = await Expense.create({
+        User_Email,
+        Expenses: [{ date, givento, Ammount, ExpenseNote }],
+      });
 
-    const expense = await Expense.create({
-      date,
-      givento,
-      Ammount,
-      ExpenseNote,
-    });
-
-    res.status(201).json({ expense });
+      res.status(201).json({ expense });
+    }
   }
 }

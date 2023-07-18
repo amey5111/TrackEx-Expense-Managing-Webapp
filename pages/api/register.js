@@ -7,8 +7,12 @@ export default async function handler(req, res) {
 
     const { name, email, password } = req.body;
 
-    const user = await User.create({ name, email, password });
-
-    res.status(201).json({ user });
+    const EmailExists = await User.findOne({ email });
+    if (EmailExists) {
+      res.json(email);
+    } else {
+      const user = await User.create({ name, email, password });
+      res.status(201).json({ user });
+    }
   }
 }

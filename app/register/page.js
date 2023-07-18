@@ -16,12 +16,23 @@ const Register = () => {
         email,
         password,
       });
-      console.log(data);
-      open("/login", "_self");
+      // open("/login", "_self");
       // let r = prompt();
-      // document.getElementById(
-      //   "Register User"
-      // ).innerHTML = `<p> Signed In Successfully just <a href="/login">Login</a> here</p>`;
+      if (data === email) {
+        document.getElementById(
+          "Register User"
+        ).innerHTML = `already have an account
+        <a
+          href="/login"
+          style="color:purple;"
+        >
+          <u>login</u>
+        </a>
+        to continue`;
+      } else {
+        open("/login", "_self");
+      }
+      console.log(data);
     } catch (error) {
       console.log(error.response.data);
     }
@@ -97,10 +108,10 @@ const Register = () => {
                   Register
                 </button>
               </div>
+              <div id="Register User" className=" w-fit mx-auto"></div>
             </form>
           </div>
         </div>
-        <div id="Register User"></div>
       </div>
     </div>
   );
