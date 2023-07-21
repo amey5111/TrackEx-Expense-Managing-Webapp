@@ -41,10 +41,6 @@ export const PesonalExpenseForm = () => {
         Expenses: [{ date, givento, Ammount, ExpenseNote }],
       });
       console.log(data);
-      // let r = prompt();
-      // document.getElementById(
-      //   "Register User"
-      // ).innerHTML = `<p> Signed In Successfully just <a href="/login">Login</a> here</p>`;
     } catch (error) {
       console.log(error.response.data);
     }

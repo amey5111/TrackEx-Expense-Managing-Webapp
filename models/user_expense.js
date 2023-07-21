@@ -2,7 +2,7 @@ import mongoose, { model } from "mongoose";
 
 const expenseSchema = new mongoose.Schema({
   User_Email: String,
-  Expenses:[
+  Expenses: [
     {
       date: {
         type: Date,
@@ -10,9 +10,8 @@ const expenseSchema = new mongoose.Schema({
       givento: String,
       Ammount: Number,
       ExpenseNote: String,
-    }
-  ]
-  
+    },
+  ],
 });
 
 export default mongoose.models.Expense ||

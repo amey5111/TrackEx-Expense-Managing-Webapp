@@ -43,21 +43,21 @@ export default function YourEventsBox() {
                         cy="50"
                         r="45"
                         fill="none"
-                        stroke-width="7.5"
+                        strokeWidth="7.5"
                       ></circle>
                       <line
                         x1="32.5"
                         y1="50"
                         x2="67.5"
                         y2="50"
-                        stroke-width="5"
+                        strokeWidth="5"
                       ></line>
                       <line
                         x1="50"
                         y1="32.5"
                         x2="50"
                         y2="67.5"
-                        stroke-width="5"
+                        strokeWidth="5"
                       ></line>
                     </svg>
 
@@ -104,21 +104,21 @@ export default function YourEventsBox() {
                         cy="50"
                         r="45"
                         fill="none"
-                        stroke-width="7.5"
+                        strokeWidth="7.5"
                       ></circle>
                       <line
                         x1="32.5"
                         y1="50"
                         x2="67.5"
                         y2="50"
-                        stroke-width="5"
+                        strokeWidth="5"
                       ></line>
                       <line
                         x1="50"
                         y1="32.5"
                         x2="50"
                         y2="67.5"
-                        stroke-width="5"
+                        strokeWidth="5"
                       ></line>
                     </svg>
 
@@ -165,21 +165,21 @@ export default function YourEventsBox() {
                         cy="50"
                         r="45"
                         fill="none"
-                        stroke-width="7.5"
+                        strokeWidth="7.5"
                       ></circle>
                       <line
                         x1="32.5"
                         y1="50"
                         x2="67.5"
                         y2="50"
-                        stroke-width="5"
+                        strokeWidth="5"
                       ></line>
                       <line
                         x1="50"
                         y1="32.5"
                         x2="50"
                         y2="67.5"
-                        stroke-width="5"
+                        strokeWidth="5"
                       ></line>
                     </svg>
 
