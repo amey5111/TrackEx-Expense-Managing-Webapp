@@ -25,4 +25,16 @@ export default async function Expensehandler(req, res) {
       res.status(201).json({ expense });
     }
   }
+
+  //get function  expense
+  
+  if (req.method === 'GET') {
+    dbConnect();
+    try {
+      const expenses = await Expense.find();
+      res.status(200).json(expenses);
+    } catch (error) {
+      res.status(500).json({ error: 'Failed to fetch users' });
+    }
+  }
 }
